@@ -67,17 +67,35 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<!-- how to hr lines-->
+<div class="component-section-info">
+          <hr style="display:flex;width:150%;position: relative;left:-55px;">
+         <p>500 GB Storage</p>
+         <hr style="display:flex;width:150%;position: relative;left:-55px;"> 
+         <p>2 Users Allowed</p>
+         <hr style="display:flex;width:150%;position: relative;left:-55px;">
+         <p>Send up to 3 GB</p>
+         <hr style="display:flex;width:150%;position: relative;left:-55px;">
+        </div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+/* how to add few hr lines */
+hr.line1 {
+      border-top: 1px solid black;
+      border-width: 80px;
+    }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+ /// How to trigger slider button to change price
+ let price1 = document.getElementById('left-price');
+   let price2 = document.getElementById('middle-price');
+   let price3 = document.getElementById("right-price")
+   document.addEventListener('click', function(){
+      price1.innerHTML = '&dollar;19.99';
+      price2.innerHTML = '&dollar;24.99';
+      price3.innerHTML = '&dollar;39.99';
+      
+   })
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
