@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@700&family=Rubik&display=swap');
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      position: relative;
+      top:-30rem
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .body {
+      width: 100%;
+      height: 10%;
+    }
+
+    .container {
+      background-color: whitesmoke;
+      font-family: 'Montserrat', sans-serif;
+      height: 60%;
+    }
+
+    #top-image {
+      display: flex;
+      position: relative;
+      left: 62em;
+      width: 19%;
+      height: 50%
+    }
+
+    .button {
+      display: flex;
+      position: relative;
+      top: -23.5rem;
+      left: 30rem;
+      opacity: 0.5;
+      
+    }
+
+    .button p {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    .button-slider {
+      display: flex;
+      position: relative;
+      top: 11px;
+      width: 50px;
+      height: 25px;
+      background-color: hsl(236, 81%, 69%);
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .button-slider-circle {
+      width: 25px;
+      background-color: white;
+      border-radius: 50px;
+      display: flex;
+      position: relative;
+      left: 1px;
+      cursor: pointer;
+    }
+
+    h2 {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      bottom: 17em;
+      opacity: 0.6;
+    }
+
+    .component-container {
+      display: flex;
+    }
+
+    .component-section {
+      display: flex;
+      position: relative;
+      top: -20em;
+      left: 9em;
+      background-color: white;
+      border: 1px solid white;
+      border-radius: 10px;
+      height: 400px;
+      width: 25%;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      
+    }
+
+    #component-section-2{
+      background-color: hsl(236, 81%, 69%);
+      display: flexbox;
+      height:440px;
+      top: -21.5rem
+     
+    }
+
+    .component-section-plan{
+      display: flex;
+      position: relative;
+      left: 20rem;
+      top:-11rem;
+      opacity: 0.8;
+    }
+
+    .price1{
+      display: flex;
+      position: relative;
+      left: 11rem;
+      top: -7rem;
+      font-size: 65px;
+    }
+
+    
+
+    #middle-price{
+      display: flex;
+      position: relative;
+      left: 10rem;
+      color: white;
+    }
+
+    #section-2-info{
+      color: white;
+      left: -2.2rem;
+    }
+
+    #section-2-plan{
+      left: 21.5rem;
+      color: white;
+    }
+
+    #section-3-plan{
+      left: 20.5rem
+    }
+
+    .component-section-info{
+      display: inline-flexbox;
+      position: relative;
+      left: -10px;
+      top:30px;
+      
+    }
+
+    .component-section-info-2{
+      display: inline-flexbox;
+      position: relative;
+      left: -30px;
+      top:30px;
+      
+    }
+
+    .component-section-info-2 p{
+      padding: 1px;
+      width: 200px;
+      
+    }
+
+    .component-section-info p{
+      padding: 1px;
+      width: 200px;
+    }
+
+    .section-button {
+      position: relative;
+      top: 10rem;
+      left: -15rem;
+      z-index: 1;
+      height: 35px;
+      padding-right: 10rem;
+      background-color: white;
+      color: hsl(233, 13%, 49%);
+      border-radius: 8px;
+    }
+
+    .section-button label {
+      display: flex;
+      position: relative;
+      width: 200%;
+      left: 50px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12.5px;
+    }
+    
+    #left-section-button{
+      background-color: hsl(236, 81%, 69%);
+      color:white;
+      left: -16rem
+    }
+
+    #middle-section-button {
+      z-index: 1;
+      height: 35px;
+      padding-right: 10rem;
+      position: relative;
+      left: -17.5rem;
+     
+    }
+
+    #right-section-button {
+      position: relative;
+      left: -16rem;
+      background-color: hsl(236, 81%, 69%);
+      color:white
+    }
+
+    #bottom-image{
+      width:20%;
+      position: relative;
+      top:-32rem;
+     
+    }
+
+    hr.line1 {
+      border-top: 1px solid black;
+      border-width: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img id="top-image" src="images/bg-top.svg" />
+    <h2>Our Pricing</h2>
+    <div class="button">
+      <p>Annually</p>
+      <div class="button-slider">
+        <button class="button-slider-circle" "></button>
+      </div>
+      <p>Monthly</p>
+    </div>
+    <div class="component-container">
+      <div class="component-section">
+        <div id="section-1-plan" class="component-section-plan">Basic</div>
+        
+       <div id="left-price" class="price1">&dollar;199.99</div> 
+       
+        <div class="component-section-info">
+          <hr style="display:flex;width:150%;position: relative;left:-55px;">
+         <p>500 GB Storage</p>
+         <hr style="display:flex;width:150%;position: relative;left:-55px;"> 
+         <p>2 Users Allowed</p>
+         <hr style="display:flex;width:150%;position: relative;left:-55px;">
+         <p>Send up to 3 GB</p>
+         <hr style="display:flex;width:150%;position: relative;left:-55px;">
+        </div>
+        <button id="left-section-button" class="section-button">
+          <label for="section-button">LEARN MORE</label>
+        </button>
+
+      </div>
+
+      <div class="component-section" id="component-section-2">
+        <div id="section-2-plan" class="component-section-plan">
+        Professional
+        </div>
+        <div id="middle-price" class="price1">&dollar;249.99</div>
+       
+        <div id="section-2-info" class="component-section-info-2">
+        <hr style="display:flex;width:150%;position: relative;left: -110px; top: 4px">
+        <p>1 TB Storage</p>
+        <hr style="display:flex;width:150%;position: relative;left: -110px; top: 4px">
+        <p>5 Users Allowed</p>
+        <hr style="display:flex;width:150%;position: relative;left: -110px; top: 4px">
+        <p>Send up to 10 GB</p>
+        <hr style="display:flex;width:150%;position: relative;left: -110px; top: 4px">
+      </div>
+        <button id="middle-section-button" class="section-button">
+          <label for="section-button">LEARN MORE</label>
+        </button>
+      </div>
+      <div class="component-section">
+        <div id="section-3-plan" class="component-section-plan">Master</div>
+        <div id="right-price" class="price1">&dollar;399.99</div>
+        
+        <div class="component-section-info-2">
+        <hr style="display:flex;width:150%; position: relative;left: -110px">
+        <p>2 TB Storage</p>
+        <hr style="display:flex;width:150%; position: relative;left: -110px">
+        <p>10 Users Allowed</p>
+        <hr style="display:flex;width:150%; position: relative;left: -110px">
+        <p>Send up to 20 GB</p>
+        <hr style="display:flex;width:150%; position: relative;left: -110px">
+        </div>
+        <button id="right-section-button" class="section-button">
+          <label for="section-button">LEARN MORE</label>
+        </button>
+      </div>
+    </div>
+    <img id="bottom-image" src="images/bg-bottom.svg" />
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Jeff Chin</a>.
+    </div>
+  </div>
+
+  <script>
+   let button = document.getElementsByClassName('button-slider');
+   let plan1 = document.getElementById('section-1-plan');
+   let price1 = document.getElementById('left-price');
+   let price2 = document.getElementById('middle-price');
+   let price3 = document.getElementById("right-price")
+   document.addEventListener('click', function(){
+      price1.innerHTML = '&dollar;19.99';
+      price2.innerHTML = '&dollar;24.99';
+      price3.innerHTML = '&dollar;39.99';
+     
+   })
+
+  
+
+  </script>
+</body>
+
+</html>
